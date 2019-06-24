@@ -1,0 +1,104 @@
+/* Color Palette:
+#2B2D42 -   dark blue
+#8D99AE -   light blue
+#EDF2F4 -   blue/white
+#EF233C -   red
+ */
+ /* Fonts:
+font-family: 'Open Sans', sans-serif;
+font-family: 'Caveat', cursive; 
+*/
+
+/* Global style
+***************************** */
+/* Apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* End of Border Box snippet */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+h1, h2 {
+    font-family: 'Caveat', cursive; 
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+a {
+    color: #EF233C;
+}
+a:hover {
+    /* remove link decoration on hover */
+    text-decoration: none;
+}
+.content-wrap {
+    width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
+}
+.col-narrow {
+    width: 30%;
+    float: left;
+    /* for well aligning, and when the content flows longer than 175px it can still flow downward*/
+    min-height: 175px;
+    /* testing: */
+    /* border: 1px solid black; */
+}
+.col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 175px;
+    /* testing: */
+    /* border: 1px solid black; */
+}
+
+/* Header and Footer
+***************************** */
+header, footer {
+    background: #2B2D42;
+    /* change font color */
+    color: #8D99AE;
+}
+/* header */
+.profile-img {
+    border-radius: 50%;
+}
+/* header {
+    text-align: center;
+} */
+header h1, header h2 {
+    color: #EDF2F4;
+    margin: 0;
+}
+/* footer */
+footer {
+    text-align: center;
+}
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Work Experience
+***************************** */
+.work {
+    background: #EDF2F4;
+}
+
+/* Education
+***************************** */
+.education {
+    background: #8D99AE;
+}
